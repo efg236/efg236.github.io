@@ -1,0 +1,247 @@
+@import url("hover.css");
+@import url("card.css");
+/*styling containers*/
+
+body {
+  background-color:blue;
+}
+
+.container {
+  height: 100%;
+  position: relative;
+}
+
+.card-container {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 85%;
+  margin-top:130px;
+  max-width: 816px;
+}
+
+.game-buttons-container {
+  padding: 15px;
+  width: 100%;
+  margin: 50px auto;
+  position: relative;
+  z-index: -1;
+}
+
+/*responsive for panda animation*/
+
+@media (max-width:1000px) {
+  .game-buttons-container {
+    display: none;
+  }
+}
+
+.overflow-visible {
+  overflow: visible!important;
+}
+
+/*styling carousel */
+
+
+.carousel-inner {
+  height: 320px;
+}
+
+.carousel-inner .row {
+  max-width: 806px;
+  padding: 10px;
+  margin: 0;
+}
+
+.carousel-inner .carousel-items-container{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: -90px!important;
+}
+
+.carousel-control-next {
+  right: -90px!important;
+}
+
+@media (max-width:1000px) {
+  .carousel-control-prev {
+    left: -70px!important;
+    top: 70px!important;
+    height: 50px;
+    width: 50px;
+  }
+
+  .carousel-control-next {
+    right: -70px!important;
+    top: 70px!important;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media (max-width:480px) {
+  .carousel-control-prev {
+    left: -35px!important;
+    top: 70px!important;
+    height: 50px;
+    width: 50px;
+  }
+
+  .carousel-control-next {
+    right: -35px!important;
+    top: 70px!important;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B8B8B8' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")!important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B8B8B8' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")!important;
+}
+
+
+/*styling navigation bar*/
+
+nav {
+  text-align:center;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  max-width: 776px;
+}
+
+#game-info .modal-body h4 {
+  text-align: center;
+}
+
+#game-info .modal-body p {
+  color:black;
+}
+
+p {
+  text-align: center;
+  color:white;
+  font-size:18px;
+  font-family:inherit;
+}
+
+#game-logo{
+  padding:10px;
+  width:40%;
+  height:40%;
+}
+
+/*responsive for logo*/
+@media (max-width:480px) {
+  #game-logo{
+    width:100%;
+    height:100%;
+  }
+}
+
+@media (max-width:1000px) {
+  #game-logo{
+    width:65%;
+    height:65%;
+  }
+}
+
+div .item-name {
+  width:100%;
+}
+/*responsive for front flashcard text*/
+@media(max-width:1000px) {
+  .item-name{
+    font-size:15px;
+  }
+}
+
+@media(max-width:480px) {
+  .item-name{
+    font-size:10px;
+  }
+}
+
+div .item-img {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:70%;
+  max-height:70%;
+}
+
+/*styling panda save button*/
+
+#game-save {
+  padding:20px;
+  max-width:258px;
+  margin: 0 auto;
+  background: url("../feed-me-panda.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 208px;
+  -webkit-transition: background .1s ease-in-out;
+  -moz-transition: background .1s ease-in-out;
+  -o-transition: background .1s ease-in-out;
+  transition: background .1s ease-in-out;
+  position: relative;
+}
+
+#game-save.panda-mouth-open {
+  background: url("../panda-mouthopen.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#game-save.panda-bad {
+  background: url("../panda-bad.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#game-save #panda-drop-target {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*"feed me" underneath the panda animation*/
+#panda-feed-me {
+  text-align: center;
+  width:100%;
+}
+
+/*modal button*/
+.btn.btn-primary {
+  position: absolute;
+  left: 0;
+  top: 150px;
+  background-color:white;
+  border-color:grey;
+  color:grey;
+  border-radius:45%;
+}
+
+/*responsive for front flashcard text*/
+
+@media(max-width:1000px) {
+  .btn.btn-primary {
+    top: 275px;
+    background-color:white;
+    border-color:grey;
+    color:grey;
+    border-radius:45%;
+  }
+}

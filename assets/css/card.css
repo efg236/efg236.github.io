@@ -1,0 +1,129 @@
+/*styling flashcards*/
+
+.game-card{
+  align-items:center;
+  width:240px;
+  height:270px;
+  position:relative;
+}
+
+.game-card .card {
+  border: none;
+  cursor: pointer;
+  position:relative;
+  width:100%;
+  height:100%;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+}
+
+@media (max-width:1000px) {
+  .game-card .card {
+    width:70%;
+    height:100%%;
+    transform-style:preserve-3d;
+    transition:transform 1s ease;
+  }
+}
+
+@media (max-width:767.98px) {
+  .game-card .card {
+    width:50%;
+    height:75%;
+    transform-style:preserve-3d;
+    transition:transform 1s ease;
+  }
+}
+
+@media (max-width:480px) {
+  .game-card .card {
+    width:35%;
+    height:65%;
+    transform-style:preserve-3d;
+    transition:transform 1s ease;
+  }
+}
+
+.game-card .card.flipped {
+  transform: rotateY(180deg);
+}
+
+.game-card .card .back-img{
+  text-align: center;
+}
+
+.game-card .card .back-content{
+  text-align: center;
+  font-size:12px;
+  margin-top:20px;
+}
+
+@media (max-width:1000px) {
+  .game-card .card .back-content{
+    text-align: center;
+    font-size:10px;
+    margin-top:15px;
+  }
+}
+
+@media (max-width:767.98px) {
+  .game-card .card .back-content{
+    text-align:center;
+    font-size:8px;
+    margin:-top:20px;
+  }
+}
+
+@media (max-width:480px) {
+  .game-card .card .back-content{
+    text-align:center;
+    font-size:6px;
+    margin:-top:10px;
+  }
+}
+
+/*styling card flip when clicked*/
+
+.game-card .card .card__face {
+  border-radius: 25px;
+  position:absolute;
+  width:100%;
+  height:100%;
+  backface-visibility: hidden;
+  color:#fff;
+  cursor:pointer;
+  padding: 20px;
+}
+
+@media (max-width:767.98px) {
+  .game-card .card .card__face {
+    padding:10px;
+  }
+}
+
+/*default purple color of the front flashcard*/
+.game-card .card .card__face img {
+  width: 70%;
+}
+
+/*default purple color of the front flashcard*/
+.game-card .card .front{
+  background:#58597E;
+}
+
+/*back side of flashcard properties*/
+.game-card .card .back {
+  background:black;
+  transform:rotateY(180deg);
+  justify-content: center;
+}
+
+/*makes the "good food" flashcard green*/
+.game-card .card .back.good{
+  background:#119966;
+}
+
+/*makes the "good food" flashcard red*/
+.game-card .card .back.bad{
+  background:#931221;
+}

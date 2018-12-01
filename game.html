@@ -1,0 +1,603 @@
+<! DOCTYPE HTML>
+<html>
+<head>
+  <title>Get Well, Panda! | Learn How To Beat the Cold </title>
+  <meta charset ="utf-8">
+  <!--responsive-->
+  <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+  <!--browser tab icon-->
+  <link rel="icon" href="./assets/panda-good.png">
+  <!--style-->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+  <!--script-->
+  <script type="text/javascript" src="./assets/js/main.js"></script>
+</head>
+<body>
+  <!--instructional modal-->
+  <div class="modal fade" id="game-info" tabindex="-1" role="dialog" aria-labelledby="game-info" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="game-info">How to Play</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4>To play, there are two ways:</h4>
+          <p> You can either click on the card itself to flip it and confirm your educated guess or you can drag the food item down to the panda and see how it turns out for her when you do! Have fun and help Panda get better!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-navigation-->
+  <div class="container">
+    <nav>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#game-info">?</button>
+      <!--logo-->
+      <img id="game-logo" src="./assets/panda-logo.svg">
+    </nav>
+    <!-flashcards-->
+    <div class="card-container">
+      <div id="card-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner overflow-visible">
+          <div class="carousel-items-container">
+
+            <!--BEGIN CAROUSEL ITEM -->
+            <div class="carousel-item active">
+              <div class="row justify-content-between">
+                <!--leftmost card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Carrot</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate" src="./assets/good-food/carrot.png">
+                        </div>
+                      </div>
+                      <div class="card__face back good">
+                        <div class="back-img"><img src="./assets/panda-good.png">
+                        </div>
+                        <div class="back-content"><span>They are good for you! Carrots have vitamin A and C in them that helps boost immunity, helping you with fighting off cold symptoms and preventing new ones.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--center card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Banana</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate" src="./assets/good-food/banana.png">
+                        </div>
+                      </div>
+                      <div class="card__face back good">
+                        <div class="back-img"><img src="./assets/panda-good.png">
+                        </div>
+                        <div class="back-content"><span>They are good for you! Bananas are rich in potassium that helps fend off bloat and magnesium that helps fight pain, easing the lack of appetite you feel when sick.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--rightmost card that are flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Eggplant</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate bad-food" src="./assets/bad-food/eggplant.png">
+                        </div>
+                      </div>
+                      <div class="card__face back bad">
+                        <div class="back-img"><img src="./assets/panda-bad.png">
+                        </div>
+                        <div class="back-content"><span>They are actually not great to eat when sick! They contain high levels of histamines that will make your nasal passage swell and make your congestion worse.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--END CAROUSEL ITEM -->
+
+            <!--BEGIN CAROUSEL ITEM -->
+            <div class="carousel-item">
+              <div class="row justify-content-between">
+                <!--leftmost card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Rice</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate" src="./assets/good-food/rice.png">
+                        </div>
+                      </div>
+                      <div class="card__face back good">
+                        <div class="back-img"><img src="./assets/panda-good.png">
+                        </div>
+                        <div class="back-content"><span>This can be good for you! Rice contains tryptophan, an amino acid that can help induce sleepiness. Congee is a way to go!</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--center card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Strawberries</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate bad-food" src="./assets/bad-food/strawberries.png">
+                        </div>
+                      </div>
+                      <div class="card__face back bad">
+                        <div class="back-img"><img src="./assets/panda-bad.png">
+                        </div>
+                        <div class="back-content"><span>They are surprisingly bad for you during a cold! They release histamine that can contribute to congestion. Stay away from them until you get better!</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--rightmost card that are flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Avocado</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate bad-food" src="./assets/bad-food/avocado.png">
+                        </div>
+                      </div>
+                      <div class="card__face back bad">
+                        <div class="back-img"><img src="./assets/panda-bad.png">
+                        </div>
+                        <div class="back-content"><span>Not a good idea! This fatty fruit is high on histamines - eating more of it will make your runny nose worse! Keep the guac for when you are feeling better!</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--END CAROUSEL ITEM -->
+
+            <!--BEGIN CAROUSEL ITEM -->
+            <div class="carousel-item">
+              <div class="row justify-content-between">
+                <!--leftmost card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Coffee</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate bad-food" src="./assets/bad-food/coffee.png">
+                        </div>
+                      </div>
+                      <div class="card__face back bad">
+                        <div class="back-img"><img src="./assets/panda-bad.png">
+                        </div>
+                        <div class="back-content"><span>Save the morning joe for brighter days! Coffee will only dehydrate your body when it needs water the most. That latte will have to wait.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--center card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Pineapple</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate" src="./assets/good-food/pineapple.png">
+                        </div>
+                      </div>
+                      <div class="card__face back good">
+                        <div class="back-img"><img src="./assets/panda-good.png">
+                        </div>
+                        <div class="back-content"><span>Great for that stuffy nose! Pinneapple contains bromelain that has been shown to thin mucus. Time to chop down on a few!</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--rightmost card that are flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Water</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate" src="./assets/good-food/water bottle.png">
+                        </div>
+                      </div>
+                      <div class="card__face back good">
+                        <div class="back-img"><img src="./assets/panda-good.png">
+                        </div>
+                        <div class="back-content"><span>Drink plenty of fluids! Being hydrated is your quickest way to recovery!</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--END CAROUSEL ITEM -->
+
+            <!--BEGIN CAROUSEL ITEM -->
+            <div class="carousel-item">
+              <div class="row justify-content-between">
+                <!--leftmost card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Junk Food</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate bad-food" src="./assets/bad-food/junk food.png">
+                        </div>
+                      </div>
+                      <div class="card__face back bad">
+                        <div class="back-img"><img src="./assets/panda-bad.png">
+                        </div>
+                        <div class="back-content"><span>Avoid avoid avoid! Eating junk food can trigger headache as well as dehydrate you!</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--center card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Papaya</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate bad-food" src="./assets/bad-food/papaya.png">
+                        </div>
+                      </div>
+                      <div class="card__face back bad">
+                        <div class="back-img"><img src="./assets/panda-bad.png">
+                        </div>
+                        <div class="back-content"><span>Not today! Papaya is a fruit that contains histamines that will make your nasal passage swell. Save it for another time!</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--rightmost card that are flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Alcohol</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate bad-food" src="./assets/bad-food/alcohol.png">
+                        </div>
+                      </div>
+                      <div class="card__face back bad">
+                        <div class="back-img"><img src="./assets/panda-bad.png">
+                        </div>
+                        <div class="back-content"><span>That sip is going to have to wait! Alcohol can take a huge toll on your immune system. Drinking too much can make you suspectible to illness 24 hours after imbibing. Better to not drink it!</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--END CAROUSEL ITEM -->
+
+            <!--BEGIN CAROUSEL ITEM -->
+            <div class="carousel-item">
+              <div class="row justify-content-between">
+                <!--leftmost card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Orange</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate bad-food" src="./assets/bad-food/orange juice.png">
+                        </div>
+                      </div>
+                      <div class="card__face back bad">
+                        <div class="back-img"><img src="./assets/panda-bad.png">
+                        </div>
+                        <div class="back-content"><span>Caution - do not eat! Citrus fruits actually may irritate your throat, which could make you feel worse!</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--center card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Honey</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate" src="./assets/good-food/honey.png">
+                        </div>
+                      </div>
+                      <div class="card__face back good">
+                        <div class="back-img"><img src="./assets/panda-good.png">
+                        </div>
+                        <div class="back-content"><span>Good! Having honey can not only help clear your throat but it's also rich in potassium that helps fend off bloat and magnesium that helps fight pain. Eat up!</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--rightmost card that are flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Shrimp</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate bad-food" src="./assets/bad-food/shrimp.png">
+                        </div>
+                      </div>
+                      <div class="card__face back bad">
+                        <div class="back-img"><img src="./assets/panda-bad.png">
+                        </div>
+                        <div class="back-content"><span>Plan for another day! Shellfish like shrimp contain compounds that trigger the release of histamine, which will only make you feel more congested and stuffy.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--END CAROUSEL ITEM -->
+
+            <!--BEGIN CAROUSEL ITEM -->
+            <div class="carousel-item">
+              <div class="row justify-content-between">
+                <!--leftmost card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Sweet Potato</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate" src="./assets/good-food/sweet potato.png">
+                        </div>
+                      </div>
+                      <div class="card__face back good">
+                        <div class="back-img"><img src="./assets/panda-good.png">
+                        </div>
+                        <div class="back-content"><span>Defintely eat! Eating sweet potatoes will help you in boosting your immunity with vitamin A and C.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--center card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Pumpkin Seeds</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate" src="./assets/good-food/pumpkin seeds.png">
+                        </div>
+                      </div>
+                      <div class="card__face back good">
+                        <div class="back-img"><img src="./assets/panda-good.png">
+                        </div>
+                        <div class="back-content"><span>Yup! Pumpkin seeds contains zinc that can reduce cold symptoms and boost your immunity!</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--rightmost card that are flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Coconut Water</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate" src="./assets/good-food/coconut water.png">
+                        </div>
+                      </div>
+                      <div class="card__face back good">
+                        <div class="back-img"><img src="./assets/panda-good.png">
+                        </div>
+                        <div class="back-content"><span>Drink up! Replacing lost electrolytes like sodium, magnesium, and potassium will help speed up your recovery - something that coconut water can help with!</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--END CAROUSEL ITEM -->
+
+            <!--BEGIN CAROUSEL ITEM -->
+            <div class="carousel-item">
+              <div class="row justify-content-between">
+                <!--leftmost card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Ice Cream</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate bad-food" src="./assets/bad-food/ice cream.png">
+                        </div>
+                      </div>
+                      <div class="card__face back bad">
+                        <div class="back-img"><img src="./assets/panda-bad.png">
+                        </div>
+                        <div class="back-content"><span>Keep the dairy in the fridge! Dairy products like ice cream is high in inflammation-triggering saturated fat. Keep the scoops and fun for another time!</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--center card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Pizza</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate bad-food" src="./assets/bad-food/pizza.png">
+                        </div>
+                      </div>
+                      <div class="card__face back bad">
+                        <div class="back-img"><img src="./assets/panda-bad.png">
+                        </div>
+                        <div class="back-content"><span>Slices or pies - do not eat when sick! The cheese on pizza can cause inflammation due to saturated fat and tomatoes are known histamine releasers. Avoid for now! </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--rightmost card that are flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Bacon</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate bad-food" src="./assets/bad-food/bacon.png">
+                        </div>
+                      </div>
+                      <div class="card__face back bad">
+                        <div class="back-img"><img src="./assets/panda-bad.png">
+                        </div>
+                        <div class="back-content"><span>Raincheck! Bacon contains high sodium that can lead to dehydration when ill.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--END CAROUSEL ITEM -->
+
+            <!--BEGIN CAROUSEL ITEM -->
+            <div class="carousel-item">
+              <div class="row justify-content-between">
+                <!--leftmost card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Candy</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate bad-food" src="./assets/bad-food/candy.png">
+                        </div>
+                      </div>
+                      <div class="card__face back bad">
+                        <div class="back-img"><img src="./assets/panda-bad.png">
+                        </div>
+                        <div class="back-content"><span>Nada - sugar causes inflammation and will decrease immunity. Savor the sweetness another time!</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--center card that is flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Tuna</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate bad-food" src="./assets/bad-food/fatty fish.png">
+                        </div>
+                      </div>
+                      <div class="card__face back bad">
+                        <div class="back-img"><img src="./assets/panda-bad.png">
+                        </div>
+                        <div class="back-content"><span>Seafood is great - just not when you're sick! Tuna is particularly high in histamines, which can increase inflammation and contribute to congestion. </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--rightmost card that are flipped-->
+                <div class="col-4 col-sm-4">
+                  <div class="hvr-grow game-card">
+                    <div class="card">
+                      <div class="card__face front">
+                        <div><p class="item-name">Hot Chili Pepper</p>
+                        </div>
+                        <div><img class="item-img hvr-grow-rotate" src="./assets/good-food/chili peppers.png">
+                        </div>
+                      </div>
+                      <div class="card__face back good">
+                        <div class="back-img"><img src="./assets/panda-good.png">
+                        </div>
+                        <div class="back-content"><span>Sure - in moderation! Hot chili peppers has a mucokinetic effect that can make mucus thinner and you less congested. Just don't eat too many!</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--END CAROUSEL ITEM -->
+          </div>
+
+        </div>
+        <!--carousel controls--previous set-->
+        <a class="carousel-control-prev" href="#card-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <!--carousel controls--next set-->
+        <a class="carousel-control-next" href="#card-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!--panda animation-->
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-12 game-button-container-at-large">
+          <div class="game-buttons-container">
+            <div id="game-save">
+              <!--panda animation at the bottom that flips the cards-->
+              <div id="panda-drop-target"></div>
+            </div>
+              <!--static "feed me!" illustration at the bottom-->
+              <div id="panda-feed-me"><img src="./assets/feed-me-word.png"></div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  <!--Greensock library for draggables-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/utils/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script>
+  <!--Popper.js--Bootstrap.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
